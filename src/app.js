@@ -8,13 +8,13 @@ app.set('view engine', 'html')
 app.use(cors());
 app.use(express.json());
 const Subscriber = require("./models/subscribers");
-// app.use(express.static(__dirname));
+app.use(express.static(__dirname));
 
 // Your code goes here
-// app.get("/",(req,res)=>{
-//    res.sendFile(__dirname + '/index.html');
+app.get("/",(req,res)=>{
+   res.sendFile(__dirname + '/index.html');
   
-// });
+});
 
 
 //hear i have created route for subscribers.
