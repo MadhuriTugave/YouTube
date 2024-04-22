@@ -9,8 +9,8 @@ dotenv.config();
 const port = process.env.PORT || 3000;
 
 // Parse JSON bodies (as sent by API clients)
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 // Connect to DATABASE
 const DATABASE_URL = process.env.URL;
 const connectiondb= async()=>{
